@@ -60,12 +60,15 @@ const WeatherDashBoard = () => {
       </div>
 
       <div className="search-row">
-        <input
-          type="text"
-          value={city}
-          placeholder="Enter city name..."
-          onChange={(e) => setCity(e.target.value)}
-        />
+        <div className="search-input-wrap">
+          <span className="search-icon" aria-hidden="true">🔍</span>
+          <input
+            type="text"
+            value={city}
+            placeholder="Enter city name..."
+            onChange={(e) => setCity(e.target.value)}
+          />
+        </div>
         <button className="search-btn" onClick={handleSearch}>
           Search
         </button>
