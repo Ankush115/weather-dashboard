@@ -79,28 +79,13 @@
   color: #fff;
   font-weight: 700;
   box-shadow: 0 18px 24px rgba(28, 109, 226, 0.2);
+  cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .search-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 20px 30px rgba(28, 109, 226, 0.28);
-}
-
-.search-btn {
-  padding: 0.95rem 1.5rem;
-  border: none;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #1c6de2, #2b85ff);
-  color: #fff;
-  font-weight: 700;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.search-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 16px 28px rgba(44, 118, 255, 0.22);
 }
 
 .weather-card {
@@ -398,28 +383,45 @@
 }
 
 @media (max-width: 520px) {
-  .weather-card {
-    grid-template-columns: 1fr;
-    text-align: center;
+  .weather-dashboard {
+    padding: 1rem 1rem 1.2rem;
   }
 
-  .weather-card img {
-    margin: 0 auto;
-    width: 84px;
-    height: 84px;
+  .weather-dashboard h1 {
+    font-size: 2.2rem;
   }
 
-  .weather-card .weather-summary {
-    grid-template-columns: 1fr;
+  .dashboard-subtitle {
+    font-size: 0.98rem;
+    margin-bottom: 1.35rem;
   }
 
-  .weather-card .weather-summary div {
-    justify-content: space-between;
+  .search-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.9rem;
+    width: 100%;
   }
 
-  .weather-card .weather-summary .condition {
-    justify-self: stretch;
-    text-align: center;
+  .search-row input,
+  .search-row button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .search-row input {
+    padding: 1rem 1rem;
+    border-radius: 1.4rem;
+  }
+
+  .search-btn {
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+
+  .trending-row {
+    padding: 0.9rem 0 1.1rem;
   }
 
   .trending-header {
@@ -433,11 +435,38 @@
     grid-template-columns: 1fr;
   }
 
-  .search-row {
-    flex-direction: column;
+  .trend-btn,
+  .city-btn {
+    padding: 1rem 1rem;
   }
 
-  .search-row button {
-    width: 100%;
+  .weather-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1.2rem;
+  }
+
+  .weather-card img {
+    margin: 0 auto;
+    width: 88px;
+    height: 88px;
+  }
+
+  .weather-card .weather-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .weather-card .weather-summary div {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .weather-card .weather-summary .condition {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .previous-title {
+    margin-top: 1.4rem;
   }
 }
