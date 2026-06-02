@@ -1,5 +1,6 @@
 const weatherData = [
   {
+    id: 1,
     city: "New York",
     temperature: 25,
     windSpeed: 12,
@@ -8,6 +9,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
   },
   {
+    id: 2,
     city: "London",
     temperature: 18,
     windSpeed: 10,
@@ -15,7 +17,8 @@ const weatherData = [
     condition: "Cloudy",
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
   },
-  {
+  { 
+    id: 3,
     city: "Tokyo",
     temperature: 30,
     windSpeed: 15,
@@ -24,6 +27,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
   },
   {
+    id: 4,
     city: "Sydney",
     temperature: 22,
     windSpeed: 8,
@@ -32,6 +36,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/414/414927.png",
   },
   {
+    id: 5,
     city: "Paris",
     temperature: 20,
     windSpeed: 5,
@@ -40,6 +45,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/1197/1197100.png",
   },
   {
+    id: 6,
     city: "Pune",
     temperature: 35,
     windSpeed: 10,
@@ -48,6 +54,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
   },
   {
+    id: 7,
     city: "Mumbai",
     temperature: 40,
     windSpeed: 15,
@@ -56,6 +63,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
   },
   {
+    id: 8,
     city: "Berlin",
     temperature: 17,
     windSpeed: 11,
@@ -63,7 +71,8 @@ const weatherData = [
     condition: "Cloudy",
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
   },
-  {
+  { 
+        
     city: "Dubai",
     temperature: 42,
     windSpeed: 14,
@@ -72,6 +81,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
   },
   {
+    id: 10,
     city: "Toronto",
     temperature: 14,
     windSpeed: 18,
@@ -80,6 +90,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
   },
   {
+    id: 11,
     city: "Moscow",
     temperature: 8,
     windSpeed: 9,
@@ -88,6 +99,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/1197/1197100.png",
   },
   {
+    id: 12,
     city: "São Paulo",
     temperature: 26,
     windSpeed: 9,
@@ -96,6 +108,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
   },
   {
+    id: 13,
     city: "Cairo",
     temperature: 38,
     windSpeed: 12,
@@ -104,6 +117,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
   },
   {
+    id: 14,
     city: "Madrid",
     temperature: 23,
     windSpeed: 10,
@@ -112,6 +126,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
   },
   {
+    id: 15,
     city: "Seoul",
     temperature: 19,
     windSpeed: 13,
@@ -120,6 +135,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/414/414927.png",
   },
   {
+    id: 16,
     city: "Cape Town",
     temperature: 21,
     windSpeed: 16,
@@ -128,6 +144,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
   },
   {
+    id: 17,
     city: "Mexico City",
     temperature: 24,
     windSpeed: 13,
@@ -136,6 +153,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
   },
   {
+    id: 18,
     city: "Singapore",
     temperature: 31,
     windSpeed: 11,
@@ -144,6 +162,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
   },
   {
+    id: 19,
     city: "Los Angeles",
     temperature: 27,
     windSpeed: 9,
@@ -152,6 +171,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
   },
   {
+    id: 20,
     city: "Bangkok",
     temperature: 33,
     windSpeed: 10,
@@ -160,6 +180,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
   },
   {
+    id: 21,
     city: "Istanbul",
     temperature: 22,
     windSpeed: 12,
@@ -168,6 +189,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
   },
   {
+    id: 22,
     city: "Nairobi",
     temperature: 26,
     windSpeed: 10,
@@ -176,6 +198,7 @@ const weatherData = [
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
   },
   {
+    id: 23,
     city: "Reykjavik",
     temperature: 6,
     windSpeed: 22,

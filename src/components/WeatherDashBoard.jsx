@@ -48,7 +48,7 @@ const WeatherDashBoard = () => {
         <div className="trending-list">
           {trendingCities.map((item) => (
             <button
-              key={item.city}
+              key={item.city.id}
               className="trend-btn"
               onClick={() => searchCity(item.city)}
             >
@@ -84,7 +84,7 @@ const WeatherDashBoard = () => {
             />
             <div className="weather-summary">
               <div>
-                <strong>City</strong>
+                <strong>City :</strong>
                 <span>{weather.city}</span>
               </div>
               <div>
@@ -92,11 +92,11 @@ const WeatherDashBoard = () => {
                 <span>{weather.temperature}°C</span>
               </div>
               <div>
-                <strong>Humidity</strong>
+                <strong>Humidity :</strong>
                 <span>{weather.humidity}%</span>
               </div>
               <div>
-                <strong>Wind Speed</strong>
+                <strong>Wind Speed :</strong>
                 <span>{weather.windSpeed} km/h</span>
               </div>
               <div className="condition">
