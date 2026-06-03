@@ -88,7 +88,7 @@ const WeatherDashBoard = () => {
                 <span>{weather.city}</span>
               </div>
               <div>
-                <strong>Temperature</strong>
+                <strong>Temperature :</strong>
                 <span>{weather.temperature}°C</span>
               </div>
               <div>
@@ -97,7 +97,7 @@ const WeatherDashBoard = () => {
               </div>
               <div>
                 <strong>Wind Speed :</strong>
-                <span>{weather.windSpeed} km/h</span>
+                <span>{weather.windSpeed}km/h</span>
               </div>
               <div className="condition">
                 {weather.condition}

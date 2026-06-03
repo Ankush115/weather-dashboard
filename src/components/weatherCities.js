@@ -277,6 +277,15 @@ const weatherData = [
     humidity: 70,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+  },
+  {
+    id: 32,
+    city:"Srinagar",
+    temperature: 10,
+    windSpeed: 8,
+    humidity: 80,
+    condition: "Rainy",
+    icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
   }
 ];
 
