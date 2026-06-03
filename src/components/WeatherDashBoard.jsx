@@ -11,7 +11,7 @@ const WeatherDashBoard = () => {
 
   const trendingCities = [...data]
     .sort((a, b) => b.temperature - a.temperature)
-    .slice(0, 5);
+    .slice(0, 6);
 
   const searchCity = (cityName) => {
     const cityWeather = data.find(
@@ -112,10 +112,10 @@ const WeatherDashBoard = () => {
 
       <div className="previous-title">Recent searches</div>
       <div className="previous-searches">
-        {history.map((searchedCity,index) => (
+        {history.map((searchedCity,) => (
           <button
             type="button"
-            key={searchedCity + index}
+            key={searchedCity}
             className="city-btn"
             onClick={() => searchCity(searchedCity)}
           >
