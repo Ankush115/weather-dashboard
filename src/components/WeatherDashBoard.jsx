@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./WeatherDashBoard.css";
 import weatherData from "./weatherCities";
-import { useRef } from "react";
+import WeatherMap from "./WeatherMap";
 
 const WeatherDashBoard = () => {
   const [city, setCity] = useState("");
@@ -82,6 +82,8 @@ const WeatherDashBoard = () => {
           Search
         </button>
       </div>
+
+      <WeatherMap cities={data} selectedCity={weather?.city} />
 
       <div id="weatherData">
         {weather && (

@@ -7,6 +7,8 @@ const weatherData = [
     humidity: 60,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: 40.71,
+    longitude: -74.01,
   },
   {
     id: 2,
@@ -16,8 +18,10 @@ const weatherData = [
     humidity: 70,
     condition: "Cloudy",
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
+    latitude: 51.51,
+    longitude: -0.13,
   },
-  { 
+  {
     id: 3,
     city: "Tokyo",
     temperature: 30,
@@ -25,6 +29,8 @@ const weatherData = [
     humidity: 80,
     condition: "Rainy",
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
+    latitude: 35.68,
+    longitude: 139.69,
   },
   {
     id: 4,
@@ -34,6 +40,8 @@ const weatherData = [
     humidity: 65,
     condition: "Windy",
     icon: "https://cdn-icons-png.flaticon.com/512/414/414927.png",
+    latitude: -33.87,
+    longitude: 151.21,
   },
   {
     id: 5,
@@ -43,6 +51,8 @@ const weatherData = [
     humidity: 75,
     condition: "Foggy",
     icon: "https://cdn-icons-png.flaticon.com/512/1197/1197100.png",
+    latitude: 48.85,
+    longitude: 2.35,
   },
   {
     id: 6,
@@ -52,6 +62,8 @@ const weatherData = [
     humidity: 85,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: 18.52,
+    longitude: 73.85,
   },
   {
     id: 7,
@@ -61,6 +73,8 @@ const weatherData = [
     humidity: 80,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: 19.07,
+    longitude: 72.88,
   },
   {
     id: 8,
@@ -70,15 +84,19 @@ const weatherData = [
     humidity: 72,
     condition: "Cloudy",
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
+    latitude: 52.52,
+    longitude: 13.40,
   },
-  { 
-        
+  {
+    id: 9,
     city: "Dubai",
     temperature: 42,
     windSpeed: 14,
     humidity: 25,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: 25.20,
+    longitude: 55.27,
   },
   {
     id: 10,
@@ -88,6 +106,8 @@ const weatherData = [
     humidity: 68,
     condition: "Rainy",
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
+    latitude: 43.65,
+    longitude: -79.38,
   },
   {
     id: 11,
@@ -97,6 +117,8 @@ const weatherData = [
     humidity: 78,
     condition: "Foggy",
     icon: "https://cdn-icons-png.flaticon.com/512/1197/1197100.png",
+    latitude: 55.75,
+    longitude: 37.62,
   },
   {
     id: 12,
@@ -106,6 +128,8 @@ const weatherData = [
     humidity: 77,
     condition: "Rainy",
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
+    latitude: -23.55,
+    longitude: -46.63,
   },
   {
     id: 13,
@@ -115,6 +139,8 @@ const weatherData = [
     humidity: 26,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: 30.04,
+    longitude: 31.24,
   },
   {
     id: 14,
@@ -124,6 +150,8 @@ const weatherData = [
     humidity: 55,
     condition: "Cloudy",
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
+    latitude: 40.42,
+    longitude: -3.70,
   },
   {
     id: 15,
@@ -133,6 +161,8 @@ const weatherData = [
     humidity: 69,
     condition: "Windy",
     icon: "https://cdn-icons-png.flaticon.com/512/414/414927.png",
+    latitude: 37.56,
+    longitude: 126.97,
   },
   {
     id: 16,
@@ -142,6 +172,8 @@ const weatherData = [
     humidity: 60,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: -33.92,
+    longitude: 18.42,
   },
   {
     id: 17,
@@ -151,6 +183,8 @@ const weatherData = [
     humidity: 64,
     condition: "Cloudy",
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
+    latitude: 19.43,
+    longitude: -99.13,
   },
   {
     id: 18,
@@ -160,6 +194,8 @@ const weatherData = [
     humidity: 84,
     condition: "Rainy",
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
+    latitude: 1.35,
+    longitude: 103.82,
   },
   {
     id: 19,
@@ -169,6 +205,8 @@ const weatherData = [
     humidity: 58,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: 34.05,
+    longitude: -118.24,
   },
   {
     id: 20,
@@ -178,6 +216,8 @@ const weatherData = [
     humidity: 82,
     condition: "Rainy",
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
+    latitude: 13.75,
+    longitude: 100.50,
   },
   {
     id: 21,
@@ -187,6 +227,8 @@ const weatherData = [
     humidity: 70,
     condition: "Cloudy",
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
+    latitude: 41.01,
+    longitude: 28.97,
   },
   {
     id: 22,
@@ -196,6 +238,8 @@ const weatherData = [
     humidity: 65,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: -1.29,
+    longitude: 36.82,
   },
   {
     id: 23,
@@ -205,24 +249,30 @@ const weatherData = [
     humidity: 82,
     condition: "Windy",
     icon: "https://cdn-icons-png.flaticon.com/512/414/414927.png",
+    latitude: 64.14,
+    longitude: -21.94,
   },
   {
     id: 24,
     city: "Buenos Aires",
-    temperature: 28,  
+    temperature: 28,
     windSpeed: 8,
     humidity: 75,
     condition: "Cloudy",
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
+    latitude: -34.60,
+    longitude: -58.38,
   },
   {
     id: 25,
-    city:"Buldhana",
+    city: "Buldhana",
     temperature: 36,
     windSpeed: 14,
     humidity: 70,
     condition: "Sunny",
-    icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png", 
+    icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: 20.35,
+    longitude: 76.18,
   },
   {
     id: 26,
@@ -232,6 +282,8 @@ const weatherData = [
     humidity: 68,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: 21.15,
+    longitude: 79.09,
   },
   {
     id: 27,
@@ -241,7 +293,9 @@ const weatherData = [
     humidity: 72,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
-  } ,
+    latitude: 41.90,
+    longitude: 12.50,
+  },
   {
     id: 28,
     city: "Athens",
@@ -250,6 +304,8 @@ const weatherData = [
     humidity: 65,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: 37.98,
+    longitude: 23.72,
   },
   {
     id: 29,
@@ -259,6 +315,8 @@ const weatherData = [
     humidity: 68,
     condition: "Cloudy",
     icon: "https://cdn-icons-png.flaticon.com/512/1146/1146869.png",
+    latitude: 48.21,
+    longitude: 16.37,
   },
   {
     id: 30,
@@ -268,6 +326,8 @@ const weatherData = [
     humidity: 70,
     condition: "Foggy",
     icon: "https://cdn-icons-png.flaticon.com/512/1197/1197100.png",
+    latitude: 47.37,
+    longitude: 8.54,
   },
   {
     id: 31,
@@ -277,16 +337,20 @@ const weatherData = [
     humidity: 70,
     condition: "Sunny",
     icon: "https://cdn-icons-png.flaticon.com/512/6974/6974831.png",
+    latitude: 19.84,
+    longitude: 75.92,
   },
   {
     id: 32,
-    city:"Srinagar",
+    city: "Srinagar",
     temperature: 10,
     windSpeed: 8,
     humidity: 80,
     condition: "Rainy",
     icon: "https://cdn-icons-png.flaticon.com/512/414/414974.png",
-  }
+    latitude: 34.08,
+    longitude: 74.79,
+  },
 ];
 
 export default weatherData;
