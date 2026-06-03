@@ -48,7 +48,8 @@ const WeatherDashBoard = () => {
         <div className="trending-list">
           {trendingCities.map((item) => (
             <button
-              key={item.city.id}
+              type="button"
+              key={item.id}
               className="trend-btn"
               onClick={() => searchCity(item.city)}
             >
@@ -69,7 +70,7 @@ const WeatherDashBoard = () => {
             onChange={(e) => setCity(e.target.value)}
           />
         </div>
-        <button className="search-btn" onClick={handleSearch}>
+        <button type="button" className="search-btn" onClick={handleSearch}>
           Search
         </button>
       </div>
@@ -113,6 +114,7 @@ const WeatherDashBoard = () => {
       <div className="previous-searches">
         {history.map((searchedCity) => (
           <button
+            type="button"
             key={searchedCity}
             className="city-btn"
             onClick={() => searchCity(searchedCity)}
