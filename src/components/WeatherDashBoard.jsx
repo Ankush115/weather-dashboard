@@ -1,12 +1,14 @@
 import { useState } from "react";
 import "./WeatherDashBoard.css";
 import weatherData from "./weatherCities";
+import { useRef } from "react";
 
 const WeatherDashBoard = () => {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
   const [notFound, setNotFound] = useState(false);
   const [history, setHistory] = useState([]);
+  const inputRef = useRef(null);
   const data = weatherData;
 
   const trendingCities = [...data]
@@ -32,6 +34,9 @@ const WeatherDashBoard = () => {
 
   const handleSearch = () => {
     searchCity(city);
+  };
+  const handleInput = () => {
+    setCity(inputRef.current.value);
   };
   return (
     <section className="weather-dashboard">
@@ -62,12 +67,15 @@ const WeatherDashBoard = () => {
 
       <div className="search-row">
         <div className="search-input-wrap">
-          <span className="search-icon" aria-hidden="true">🔍</span>
+          <span className="search-icon" aria-hidden="true">
+            🔍
+          </span>
           <input
             type="text"
             value={city}
             placeholder="Enter city name..."
-            onChange={(e) => setCity(e.target.value)}
+            onChange={handleInput}
+            ref={inputRef}
           />
         </div>
         <button type="button" className="search-btn" onClick={handleSearch}>
@@ -100,9 +108,7 @@ const WeatherDashBoard = () => {
                 <strong>Wind Speed :</strong>
                 <span>{weather.windSpeed}km/h</span>
               </div>
-              <div className="condition">
-                {weather.condition}
-              </div>
+              <div className="condition">{weather.condition}</div>
             </div>
           </article>
         )}
@@ -112,7 +118,7 @@ const WeatherDashBoard = () => {
 
       <div className="previous-title">Recent searches</div>
       <div className="previous-searches">
-        {history.map((searchedCity,) => (
+        {history.map((searchedCity) => (
           <button
             type="button"
             key={searchedCity}
