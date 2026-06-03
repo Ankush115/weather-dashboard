@@ -37,7 +37,7 @@ const WeatherDashBoard = () => {
     <section className="weather-dashboard">
       <h1>Weather Report</h1>
       <p className="dashboard-subtitle">
-        Fast local weather lookup for the top cities around the globe.
+        Local weather lookup for the top cities around the globe.
       </p>
 
       <div className="trending-row">
@@ -112,10 +112,10 @@ const WeatherDashBoard = () => {
 
       <div className="previous-title">Recent searches</div>
       <div className="previous-searches">
-        {history.map((searchedCity) => (
+        {history.map((searchedCity,index) => (
           <button
             type="button"
-            key={searchedCity}
+            key={searchedCity + index}
             className="city-btn"
             onClick={() => searchCity(searchedCity)}
           >
