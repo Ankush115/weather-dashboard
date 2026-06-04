@@ -221,21 +221,28 @@
 
 .city-map {
   position: relative;
-  min-height: 310px;
+  min-height: 320px;
   border-radius: 28px;
   overflow: hidden;
-  background-image: url('/world-map.svg');
+  background-color: #0c3468;
+  background-image:
+    radial-gradient(circle at 30% 15%, rgba(255, 255, 255, 0.18), transparent 20%),
+    radial-gradient(circle at 82% 20%, rgba(255, 255, 255, 0.08), transparent 16%),
+    url('/world-map.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen, screen, normal;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 18px 48px rgba(0, 0, 0, 0.16);
 }
 
 .city-map::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(238, 244, 255, 0.24), rgba(255, 255, 255, 0.1));
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0) 42%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%);
   pointer-events: none;
 }
 
@@ -243,8 +250,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 25% 32%, rgba(52, 115, 233, 0.16), transparent 14%),
-    radial-gradient(circle at 62% 38%, rgba(72, 139, 243, 0.1), transparent 18%);
+  background:
+    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.08), transparent 18%),
+    radial-gradient(circle at 22% 70%, rgba(96, 168, 255, 0.1), transparent 14%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08) 1px, transparent 1px, transparent 56px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08) 1px, transparent 1px, transparent 56px);
+  background-blend-mode: screen, screen, normal, normal;
   pointer-events: none;
 }
 
@@ -255,40 +266,55 @@
   align-items: center;
   gap: 0.35rem;
   transform: translate(-50%, -50%);
-  background: none;
+  background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
+}
+
+.city-marker::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
+  filter: blur(1px);
 }
 
 .marker-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  background: #2f75ff;
-  box-shadow: 0 0 0 6px rgba(47, 117, 255, 0.16);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #2f75ff 55%);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 6px rgba(47, 117, 255, 0.18), 0 12px 20px rgba(11, 37, 88, 0.22);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .city-marker.active .marker-dot {
-  width: 14px;
-  height: 14px;
-  background: linear-gradient(135deg, #ff9e39, #ff5f62);
-  box-shadow: 0 0 0 8px rgba(255, 98, 81, 0.28);
-  transform: scale(1.05);
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle at 30% 30%, #ffe4c0, #ff5f62 58%);
+  box-shadow: 0 0 0 8px rgba(255, 98, 81, 0.28), 0 16px 24px rgba(143, 50, 40, 0.18);
+  transform: scale(1.06);
 }
 
 .marker-label {
   pointer-events: none;
   font-size: 0.75rem;
   color: #ffffff;
-  background: rgba(4, 29, 62, 0.82);
+  background: rgba(5, 32, 70, 0.92);
   border-radius: 999px;
-  padding: 0.25rem 0.55rem;
+  padding: 0.28rem 0.65rem;
   white-space: nowrap;
   opacity: 0;
   transform: translateY(-2px);
   transition: opacity 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 10px 20px rgba(5, 32, 70, 0.2);
 }
 
 .city-marker:hover .marker-label,

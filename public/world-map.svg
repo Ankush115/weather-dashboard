@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#dbe9ff" />
-      <stop offset="100%" stop-color="#edf5ff" />
+      <stop offset="0%" stop-color="#2c517a" />
+      <stop offset="100%" stop-color="#173e61" />
     </linearGradient>
     <linearGradient id="water" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#c1d8ff" />
-      <stop offset="100%" stop-color="#a6c7ff" />
+      <stop offset="0%" stop-color="#4c7ebe" />
+      <stop offset="100%" stop-color="#1b4f8a" />
     </linearGradient>
     <linearGradient id="land" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#d7e6ff" />
-      <stop offset="100%" stop-color="#b8cee7" />
+      <stop offset="0%" stop-color="#d3e2c8" />
+      <stop offset="100%" stop-color="#82a06d" />
     </linearGradient>
   </defs>
   <rect width="1200" height="600" fill="url(#sky)" />
